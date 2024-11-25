@@ -3,11 +3,12 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        description: Environment
-        type: environment
-        required: true
-        default: staging
+      person_name:
+        type: choice
+        description: Who to greet
+        options: 
+        - monalisa
+        - cschleiden
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
