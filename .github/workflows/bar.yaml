@@ -9,6 +9,4 @@ jobs:
   do_stuff:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "doing stuff"
-      - run: echo '${{ toJSON(some.var) }}'
-      
+      - run: echo '${{ toJSON(github) }}'
