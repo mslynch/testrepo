@@ -1,0 +1,10 @@
+on:
+  workflow_run:
+    workflows: ["GitHub Actions Demo"]
+    types:
+      - completed
+jobs:
+  do_stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "doing stuff"
