@@ -1,3 +1,5 @@
+name: do this on workflow run
+
 on:
   workflow_run:
     workflows: ["GitHub Actions Demo"]
@@ -8,3 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "doing stuff"
+      - run: echo '${{ toJSON(some.var) }}'
+      
